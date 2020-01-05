@@ -11,7 +11,7 @@ class {{modelName}}Controller extends Controller
     {
         ${{modelNamePluralLowerCase}} = {{modelName}}::latest()->get();
 
-        return response()->json(${{modelNamePluralLowerCase}});
+        return response()->json(${{modelNamePluralLowerCase}}, 201);
     }
 
     public function store({{modelName}}Request $request)
